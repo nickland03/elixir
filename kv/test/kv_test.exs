@@ -11,4 +11,8 @@ defmodule KVTest do
   test "unit test: exponentialList" do
     assert KV.exponentialList([1,2,3], 3) == [1, 8, 27]
   end
+
+  test "unit test: mergeArray" do
+    assert KV.mergeArray([1,2,3], [4,5,6]) == [1,2,3,4,5,6]
+  end
 end
